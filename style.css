@@ -1,0 +1,208 @@
+body {
+    background-color: #EBE5E3 !important;
+    font-family: 'Raleway', sans-serif;
+    color: #67584C !important;
+}
+
+a {
+    color:inherit !important;
+    text-decoration: inherit !important;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 5rem !important;
+}
+
+h2 {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 3rem !important;
+}
+
+h3 {
+    font-size:1.4rem !important;
+}
+
+@media (max-width:650px){
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size:2rem !important;
+    }
+
+    h3 {
+        font-size:1rem !important;
+    }
+
+    .textaccueil {
+        font-size: 1rem !important;
+    }
+}
+
+/* Navigation */
+
+.title {
+    display: inline-block;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 1.2rem;
+    color: #67584C;
+}
+
+.nav-link {
+    color: #67584C !important;
+}
+
+.nav-link:hover {
+    color: #b8967b !important;
+}
+
+.active {
+    font-weight:600;
+}
+
+/* Accueil */
+.textaccueil {
+    font-size: 1.2rem;
+}
+
+.accueil {
+    background: url("assets/header.png") top center no-repeat;
+    background-size: contain;
+}
+.rond{
+    background-color: #EBE5E3;
+}
+
+.vide {
+    height:25rem;
+}
+
+.vide2 {
+    height:3rem;
+}
+
+.vide3 {
+    height:15rem;
+}
+
+.divider {
+    background:#67584C;
+}
+
+/* Footer */
+.foot {
+    background:#67584C;
+    color:white;
+}
+
+/* Contact */
+.contact {
+    background: url("assets/lettre.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formbox {
+    background:rgba(255, 255, 255, 0.5);
+    background-attachment: fixed;
+    height:93vh !important;
+}
+
+@media (max-width:650px) {
+    .formbox {
+        height:100vh !important;
+    }
+}
+
+.contitre {
+    text-align: center;
+}
+
+/* Troc */
+.banniere {
+    background: url(assets/biblio.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.livre-ajoute {
+    background-color: rgb(103,88,76, 0.8);
+    color:#ffffff;
+    text-align: center;
+}
+
+.titreban {
+    font-family: 'La Belle Aurore', cursive;
+    font-size:1.5rem !important;
+}
+
+.titrelivreaj {
+    font-size:1.2rem;
+}
+
+.auteurlivreaj {
+    font-size:1rem;
+}
+
+@media (max-width:650px) {
+    .titrelivreaj {
+        font-size:1rem;
+    }
+    
+    .auteurlivreaj {
+        font-size:0.8rem;
+    }
+}
+
+.boitetroc {
+    font-size:1.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    background:white;
+    border:#67584C 1px solid;
+    text-align: center;
+}
+
+.btn-secondary {
+    color:white !important;
+}
+
+/*Decouverte*/
+.decouban {
+    background: rgba(255, 255, 255, 0.5);
+    background: url(assets/flying.jpg) top center no-repeat;
+    background-size: cover;
+    height:25rem;
+}
+
+.blocover {
+    background: white;
+}
+
+.blocritique {
+    background: white;
+}
+
+/*A Propos*/
+.backpropos {
+    background: url(assets/hiphiphip.jpg) top center no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: -1;   
+}
+
+.blocblanc {
+    background-color: rgba(255, 255, 255, 0.9);
+    color:#67584C !important;
+}
+
+@media (max-width:650px) {
+    .fixed-bottom {
+        position:inherit !important;
+    }
+}

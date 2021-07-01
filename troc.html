@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Une Histoire de Partage</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="d-none d-lg-inline-block" src="assets/logo.png"
+                    width=10%>
+                <div class="title ms-3 mb-0">Histoire de Partage</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                    <a class="nav-link active" href="#">Troc</a>
+                    <a class="nav-link" href="decouverte.html">Découvertes</a>
+                    <a class="nav-link" href="aPropos.html">À Propos</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="banniere col-12">
+                <div class="row justify-content-center">
+                    <div class="vide3 col-lg-12"></div>
+                    <section data-aos="zoom-in-down" class="livre-ajoute rounded col-lg-7 col-10 my-5">
+                        <div class="row pt-4">
+                            <h2 class="col-12 titreban my-0">Derniers livres ajoutés</h2>
+                        </div>
+                        <div class="row d-flex justify-content-center p-3">
+                            <article class="col-lg-2 col-6">
+                                <img src="assets/cover/ledernierhomme.jpg" class="col-12 w-100 ">
+                                <h3 class="titrelivreaj my-2">Le Dernier Homme</h3>
+                                <h3 class="auteurlivreaj">Margaret Atwood</h3>
+                            </article>
+                            <article class="col-lg-2 col-6">
+                                <img src="assets/cover/lechantdesronces.jpg" class="col-12 w-100 ">
+                                <h3 class="titrelivreaj my-2">Le Chant des Ronces</h3>
+                                <h3 class="auteurlivreaj">Leigh Bardugo</h3>
+                            </article>
+                            <article class="col-lg-2 col-6">
+                                <img src="assets/cover/lenomduvent.jpg" class="col-12 w-100 ">
+                                <h3 class="titrelivreaj my-2">Le Nom du Vent</h3>
+                                <h3 class="auteurlivreaj">Patrick Rothfuss</h3>
+                            </article>
+                            <article class="col-lg-2 col-6">
+                                <img src="assets/cover/votretempsestinfini.jpg" class="col-12 w-100 ">
+                                <h3 class="titrelivreaj my-2">Votre Temps est Infini</h3>
+                                <h3 class="auteurlivreaj">Fabien Olicard</h3>
+                            </article>
+                            <article class="col-lg-2 d-lg-inline-block d-none">
+                                <img src="assets/cover/lassassineuse.jpg" class="col-12 w-100 ">
+                                <h3 class="titrelivreaj my-2">Keleana T1 : L'Assassineuse</h3>
+                                <h3 class="auteurlivreaj">Sarah J. Maas</h3>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionExample">
+            <section class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Ajouter un livre
+                    </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex justify-content-center">
+                        <div class="col-7  justify-content-center">
+                            <form action="">
+                                <div class="col-12">
+                                    <h3 class="mt-3">Adresse mail</h3>
+                                    <input type="text" class="form-control" placeholder="Adresse mail"
+                                        aria-label="Adresse mail">
+                                </div>
+                                <div class="col-12">
+                                    <h3 class="mt-3">Nom du livre</h3>
+                                    <input type="text" class="form-control" placeholder="Nom du livre"
+                                        aria-label="Nom du livre">
+                                </div>
+                                <div class="col-12">
+                                    <h3 class="mt-3">Auteur</h3>
+                                    <input type="text" class="form-control" placeholder="Auteur du livre"
+                                        aria-label="Auteur du livre">
+                                </div>
+                                <div class="col-12">
+                                    <h3 class="mt-3">Résumé</h3>
+                                    <textarea class="form-control" rows="4" placeholder="Entrez un résumé"
+                                        aria-label="Résumé"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <h3 class="mt-3">Couverture</h3>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="row justify-content-center">
+                                    <button type="submit" class="btn btn-light col-md-2 col-12 my-3">Envoyer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Rechercher
+                    </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="col-7 justify-content-center">
+                                <form action="">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Taper le nom d'un auteur ou d'un livre" aria-label="recherche">
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <button type="submit"
+                                            class="btn btn-light col-md-2 col-12 my-3">Rechercher</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row justify-content-evenly" id="page1">
+                            <article data-aos="fade-up" class="card rounded mb-3 col-lg-5 col-11 px-4 py-3">
+                                <div class="row justify-content-center g-0">
+                                    <img src="assets/cover/lechantdesronces.jpg"
+                                        class="img-fluid align-self-start col-xl-3 col-md-4 col-6 rounded-start">
+                                    <div class="card-body col-md-8 col-12 d-flex flex-column align-self-stretch mt-0">
+                                        <h5 class="card-title mb-3">Le Chant des Ronces, de Leigh Bardugo</h5>
+                                        <p class="card-text">Embarquez dans un voyage vers des terres sombres et
+                                            dangereuses,
+                                            peuplées de villes hantées et de bois affamés, de monstres bavards et de
+                                            golems en pain
+                                            d'épices, où la voix d'une sirène peut invoquer une tempête mortelle, où
+                                            les
+                                            rivières
+                                            font de terribles promesses d'amour...</p>
+                                        <a href="#" class="btn btn-secondary align-self-end">Faire une
+                                            proposition</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-up" class="card rounded mb-3 col-lg-5 col-11 px-4 py-3">
+                                <div class="row justify-content-center g-0">
+                                    <img src="assets/cover/baskerville.jpg"
+                                        class="img-fluid align-self-start col-xl-3 col-md-4 col-6 rounded-start">
+                                    <div class="card-body col-md-8 col-12 d-flex flex-column align-self-stretch mt-0">
+                                        <h5 class="card-title mb-3">Le Chien des Baskerville, de Arthur Conan Doyle
+                                        </h5>
+                                        <p class="card-text">L'héritier des Baskerville est retrouvé mort. Doit-on
+                                            accuser ce chien
+                                            démoniaque qui rôde sur la lande, sur les terres de la famille
+                                            Baskerville ?
+                                            Quiconque
+                                            l'aperçoit est perdu. Pour Sherlock Holmes, cette histoire n'est qu'une
+                                            obscure légende.
+                                            Et
+                                            il le prouvera. Le voilà donc sur les traces de la bête diabolique.</p>
+                                        <a href="#" class="btn btn-secondary align-self-end">Faire une
+                                            proposition</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <article data-aos="fade-up" class="card rounded mb-3 col-lg-5 col-11 px-4 py-3">
+                                <div class="row justify-content-center g-0">
+                                    <img src="assets/cover/votretempsestinfini.jpg"
+                                        class="img-fluid align-self-start col-xl-3 col-md-4 col-6 rounded-start">
+                                    <div class="card-body col-md-8 col-12 d-flex flex-column align-self-stretch mt-0">
+                                        <h5 class="card-title mb-3">Votre Temps est Infini, de Fabien Olicard</h5>
+                                        <p class="card-text">L'objectif de cet ouvrage est simple : vous rendre les
+                                            clefs de votre temps !
+                                            Pour ce faire, Fabien Olicard vous ouvre les portes de son expérience
+                                            personnelle et de ses souvenirs : grand procrastinateur devant l'éternel
+                                            (qui l'eût cru ?!) , il a dû lui-même pratiquer une détox féroce de ses
+                                            mauvaises habitudes et apprendre à s'organiser afin de se révéler à lui-même
+                                            et aux autres.
+                                            Dans la lignée de Tim Ferriss et de sa fameuse Semaine de 4 heures, Fabien
+                                            Olicard vous propose ici sa méthode pour retrouver du temps pour soi et vous
+                                            accomplir véritablement : conseils, astuces, mises en garde, découvrez la
+                                            panoplie de trucs que le célèbre mentaliste met à votre disposition pour
+                                            devenir vous-même et reprendre le contrôle de votre vie.</p>
+                                        <a href="#" class="btn btn-secondary align-self-end">Faire une
+                                            proposition</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-up" class="card rounded mb-3 col-lg-5 col-11 px-4 py-3">
+                                <div class="row justify-content-center g-0">
+                                    <img src="assets/cover/lacitedesrobots.jpg"
+                                        class="img-fluid align-self-start col-xl-3 col-md-4 col-6 rounded-start">
+                                    <div class="card-body col-md-8 col-12 d-flex flex-column align-self-stretch mt-0">
+                                        <h5 class="card-title mb-3">La Cité des Robots, d'Isaac Asimov
+                                        </h5>
+                                        <p class="card-text">La Cité des robots, l'aboutissement de la logique robotique
+                                            : la ville synnoétique parfaite où humains et robots pourront peut-être un
+                                            jour vivre en harmonie, véritablement égaux. Les robots qui la construisent
+                                            loin de toute influence humaine, n'ont-ils pas eux-mêmes défini les Trois
+                                            Lois de l'humanique... !
+
+                                            Mais pour l'heure, Derec a d'autres problèmes : après s'être réveillé
+                                            amnésique dans une capsule de survie sur un astéroïde désert, le voilà
+                                            prisonnier des robots qui l'ont sauvé, puis de l'impitoyable extraterrestre
+                                            Aranimas...
+
+                                            Qui est-il vraiment ? Quelle est cette clef qui ouvre la voie du Périhélion
+                                            et que tous convoitent ? Or, sur le périlleux chemin de la Cité des robots,
+                                            Derec rencontre une femme mystérieuse, Katherine, qui prétend le connaître
+                                            et l'appelle David...</p>
+                                        <a href="#" class="btn btn-secondary align-self-end">Faire une
+                                            proposition</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <article data-aos="fade-up" class="card rounded mb-3 col-lg-5 col-11 px-4 py-3">
+                                <div class="row justify-content-center g-0">
+                                    <img src="assets/cover/missperegrineetlesenfantsparticuliers.jpg"
+                                        class="img-fluid align-self-start col-xl-3 col-md-4 col-6 rounded-start">
+                                    <div class="card-body col-md-8 col-12 d-flex flex-column align-self-stretch mt-0">
+                                        <h5 class="card-title mb-3">Miss Peregrine et les Enfants Particuliers, de
+                                            Ransom Riggs</h5>
+                                        <p class="card-text">Jacob Portman, 16 ans, écoute depuis son enfance les récits
+                                            fabuleux de son grand-père. Ce dernier, un juif polonais, a passé une partie
+                                            de sa vie sur une minuscule île du pays de Galles, où ses parents l'avaient
+                                            envoyé pour le protéger de la menace nazie. Le jeune Abe Portman y a été
+                                            recueilli par Miss Peregrine Faucon, la directrice d'un orphelinat pour
+                                            enfants « particuliers ». Selon ses dires, Abe y côtoyait une ribambelle
+                                            d'enfants doués de capacités surnaturelles, censées les protéger des «
+                                            Monstres ».Un soir, Jacob trouve son grand-père mortellement blessé par une
+                                            créature qui s'enfuit sous ses yeux. Bouleversé, Jacob part en quête de
+                                            vérité sur l'île si chère à son grand-père. En découvrant le pensionnat en
+                                            ruines, il n’a plus aucun doute : les enfants particuliers ont réellement
+                                            existé. Mais étaient-ils dangereux ? Pourquoi vivaient-ils ainsi reclus,
+                                            cachés de tous ? Et s'ils étaient toujours en vie, aussi étrange que cela
+                                            puisse paraître…</p>
+                                        <a href="#" class="btn btn-secondary align-self-end">Faire une
+                                            proposition</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-up" class="card rounded mb-3 col-lg-5 col-11 px-4 py-3">
+                                <div class="row justify-content-center g-0">
+                                    <img src="assets/cover/lenomduvent.jpg"
+                                        class="img-fluid align-self-start col-xl-3 col-md-4 col-6 rounded-start">
+                                    <div class="card-body col-md-8 col-12 d-flex flex-column align-self-stretch mt-0">
+                                        <h5 class="card-title mb-3">Le Nom du Vent, de Patrick Rothfuss
+                                        </h5>
+                                        <p class="card-text">J'ai libéré des princesses, j'ai incendié la ville de
+                                            Trebon. J'ai suivi des pistes au clair de lune que personne n'ose évoquer
+                                            durant le jour. J'ai conversé avec les dieux, aimé des femmes et écrit des
+                                            chansons qui font pleurer les ménestrels.
+
+                                            J'ai été exclu de l'Université à un âge où l'on est encore trop jeune pour y
+                                            entrer. J'y étais allé pour apprendre la magie, celle dont on parle dans les
+                                            histoires.
+
+                                            Je voulais apprendre le nom du vent.
+
+                                            Mon nom est Kvothe.
+
+                                            Vous avez du entendre parler de moi.</p>
+                                        <a href="#" class="btn btn-secondary align-self-end">Faire une
+                                            proposition</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <article data-aos="fade-up" class="card rounded mb-3 col-lg-5 col-11 px-4 py-3">
+                                <div class="row justify-content-center g-0">
+                                    <img src="assets/cover/ellana.jpg"
+                                        class="img-fluid align-self-start col-xl-3 col-md-4 col-6 rounded-start">
+                                    <div class="card-body col-md-8 col-12 d-flex flex-column align-self-stretch mt-0">
+                                        <h5 class="card-title mb-3">Ellana, de Pierre Bottero</h5>
+                                        <p class="card-text">Seule survivante d’un groupe de pionniers après l’attaque
+                                            de leur caravane, une fi llette est recueillie par un peuple sylvestre et
+                                            grandit à l’écart des hommes. À l’adolescence, elle décide de partir en
+                                            quête de ses origines. Sous le nom d’Ellana, elle croise alors le plus grand
+                                            maître marchombre, Jilano Alhuïn, qui la prend pour élève et l’initie aux
+                                            secrets de sa guilde. Un apprentissage semé de rencontres et de dangers…
+                                        </p>
+                                        <p class="card-text">Le Pacte des Marchombres invite le lecteur à pénétrer dans
+                                            les arcanes d’une guilde aux pouvoirs extraordinaires, et à suivre le destin
+                                            d’Ellana Caldin, héroïne prodigieuse par sa psychologie, ses exploits
+                                            physiques et son insatiable goût de la liberté.</p>
+                                        <a href="#" class="btn btn-secondary align-self-end">Faire une
+                                            proposition</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-up" class="card rounded mb-3 col-lg-5 col-11 px-4 py-3">
+                                <div class="row justify-content-center g-0">
+                                    <img src="assets/cover/ledernierhomme.jpg"
+                                        class="img-fluid align-self-start col-xl-3 col-md-4 col-6 rounded-start">
+                                    <div class="card-body col-md-8 col-12 d-flex flex-column align-self-stretch mt-0">
+                                        <h5 class="card-title mb-3">Le Dernier Homme, de Margaret Atwood
+                                        </h5>
+                                        <p class="card-text">Un monde, le nôtre, dans un futur pas si lointain... Un
+                                            monde dévasté à la suite d'une catastrophe écologique sans précédent, où se
+                                            combinent des conditions climatiques aberrantes, des manipulations
+                                            génétiques délirantes et un virus foudroyant prompt à détruire l'ensemble de
+                                            l'humanité. Esseulé au cœur de cet enfer aseptisé et visionnaire, digne de
+                                            1984 et d’Orange mécanique, un homme, Snowman, est confronté à d'étranges
+                                            créatures génétiquement modifiées, les Crakers, une nouvelle race d' «
+                                            humains » programmés pour n'être sujets ni à la violence, ni au désir
+                                            sexuel, ni au fanatisme religieux. Tel un Robinson futuriste, il doit lutter
+                                            pour sa survie et celle de son espèce. Au risque d’y perdre son âme...</p>
+                                        <a href="#" class="btn btn-secondary align-self-end">Faire une
+                                            proposition</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row"></div>
+                        <nav aria-label="Page Navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="troc2.html#page2">2</a></li>
+                                <li class="page-item"><a class="page-link" href="troc2.html#page2">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container-fluid foot">
+        <div class="row justify-content-between p-2 align-items-center">
+            <p class="col-4 mb-0"><a href="#">Haut de page</a></p>
+            <div class="col-3 d-flex justify-content-end">
+                <a href="https://www.facebook.com/"><img class="m-1" src="assets/facebook.png"></a>
+                <a href="https://twitter.com/"><img class="m-1" src="assets/twitter.png"></a>
+                <a href="https://www.instagram.com/"><img class="m-1" src="assets/instagram.png"></a>
+                <a href="https://www.pinterest.fr/"><img class="m-1" src="assets/pinterest.png"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
